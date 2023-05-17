@@ -1,0 +1,158 @@
+* {
+    text-decoration: none;
+}
+
+h2 {
+    background-color: black;
+    color: white;
+    border-radius: 1rem;
+    text-align: center;
+    font-size: 15px;
+}
+.hover {
+
+    background: crimson;
+    padding: 10px;
+    border-radius: 1rem;
+    transition: all 0.3s ease;
+    margin: 20px;
+    color: white;
+}
+
+.hover:hover {
+    background: #8c54fb;
+    transition: all 0.3s ease;
+}
+
+.active {
+    background: crimson;
+    padding: 10px;
+    border-radius: 1rem;
+    transition: all 0.3s ease;
+    margin: 20px;
+    color: white;
+}
+
+.active:active {
+    background: #8c54fb;
+    transition: all 0.3s ease;
+}
+
+.container {
+    display: flex;
+    background: crimson;
+    padding: 10px;
+    border-radius: 1rem;
+    transition: all 0.3s ease;
+    margin: 20px;
+    color: white;
+}
+
+.visited {
+    color: yellow;
+}
+
+.visited:visited {
+    color: #8c54fb;
+}
+
+
+
+.link:link {
+    color: green;
+}
+
+.focus-input {
+    padding: 5px 10px;
+    border-radius: 0.5rem;
+    outline: none;
+    border: 4px solid transparent;
+    transition: background 1s, color 1s, translate 1s ease-in-out, border 1s;
+}
+
+.focus-input:focus {
+    background: lightblue;
+    color: green;
+    translate: 50%;
+    border: 4px solid white;
+}
+
+.flex {
+    display: flex;
+}
+
+.caja {
+    width: 100px;
+    height: 100px;
+    background-color: crimson;
+    border-radius: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.first .caja:first-child {
+    background: purple;
+}
+
+.last .caja:last-child {
+    background: purple;
+}
+
+.first-of-type .caja:first-of-type {
+    background: purple;
+}
+
+.nth-child-odd .caja:nth-child(odd) {
+    background: purple;
+}
+
+.nth-child-even .caja:nth-child(even) {
+    background: purple;
+}
+
+.nth-child-number .caja:nth-child(3) {
+    background: purple;
+}
+
+.nth-child-n .caja:nth-child(2n) {
+    background: purple;
+}
+.nth-child-number-n .caja:nth-child(3n + 1 ) {
+    background: purple;
+}
+
+
+.first-letter::first-letter{
+    color: purple;
+    font-size: 2rem;
+    letter-spacing: 0.2rem;
+}
+.first-line::first-line{
+    color: purple;
+    font-size: 2rem;
+    letter-spacing: 0.2rem;
+}
+
+
+.before::before{ 
+content: "🤣";
+
+}
+
+.after::after{
+    content:"😊" ;
+}
+
+.input-placeholder {
+    outline: none;
+    border: none;
+    border-radius: 1rem;
+    padding: 10px;
+    background-color: lightblue;
+
+}
+
+.input-placeholder::placeholder{
+    color: white;
+}
